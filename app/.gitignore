@@ -1,0 +1,5 @@
+/build/
+app.iml
+proguard-rules.pro
+local.properties
+/.idea/

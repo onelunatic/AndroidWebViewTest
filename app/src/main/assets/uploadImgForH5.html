@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>H5页面上传手机照片</title>
+    <script type="text/javascript">
+            function javacalljs(){
+                 document.getElementById("showmsg").innerHTML = "JAVA调用了JS的无参函数";
+            }
+            function javacalljswith(arg){
+                 document.getElementById("showmsg").innerHTML = (arg);
+            }
+     </script>
+</head>
+<body>
+<form action="">
+    <p>图片1: <input type="file" name="uploadImg1" /></p>
+    <p>图片2: <input type="file" name="uploadImg2" /></p>
+    <h3 id="showmsg">调用js显示结果</h3>
+    <input type="submit" value="Submit" />
+    <input type="button" value="Js调用Java代码" onclick="window.android.jsCallAndroid()"/>
+    <input type="button" value="Js调用Java代码并传参数" onclick="window.android.jsCallAndroidArgs('Js传过来的参数')"/>
+    <input type="button" value="Js调用JS代码" onclick="javacalljswith('sdfsdfs')"/>
+</form>
+
+</body>
+</html>
